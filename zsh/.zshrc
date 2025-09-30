@@ -7,7 +7,7 @@ export PATH="$PATH":"$HOME/.local/scripts/"
 bindkey -s ^f "tmux-sessionizer\n"
 alias inv='nvim $(fzf --preview="cat {}")'
 alias helpdf='okular $(fzf) >/dev/null 2>&1 &'
-alias vim='nvim .'
+# alias vim='nvim .'
 alias saker='sudo shutdown -h now'
 source <(fzf --zsh)
 ZSH_THEME="robbyrussell"
@@ -19,7 +19,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nvim ~/.zshrc"
 alias nvimconfig="nvim ~/.config/nvim"
 alias kadehbattery="upower -i $(upower -e | grep BAT)"
-nerdfetch
+fastfetch
 eval "$(zoxide init zsh)"
 
 # Generated for envman. Do not edit.
